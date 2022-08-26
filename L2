@@ -1,0 +1,44 @@
+hostname SW2                                            #1.1a
+ip domain name wsr.ru                                   #1.1b
+username cisco privilege 15 secret skills               #1.1c
+aaa new-model            #1.1d
+radius server srv1                                     ######"srv1" - регистрозавис.произвольна назва сервера
+  address ipv4 203.0.113.1 auth-port 1812      ###### ip сервера  
+  key skills                   ######такой же ключ указываем на сервере
+aaa autenication login default group radius local    ######авторизация вначале ч-з сервер, потом локально
+
+vlan 1000
+  name Managment
+
+interface range gi0/0-3,gi1/0-3
+  switchport trunk ecapsulation dot1q
+  switchport mode trunk
+  switchport trunk allowed vlan 1000
+
+
+interface vlan 1000                #4
+  ip addtess 192.168.0.4 255.255.255.0
+  no shutdown
+
+ip ssh ver 2 
+crypto key generate rsa                  ######bits 2048
+
+line vty 0 4
+  privilege level 15
+  transport input ssh
+  login authentication default
+line console 0
+  privilege level 15
+  login authentication default
+
+
+interface range gi0/0-1          #2.a
+  channel-group 1 mode passive        
+interface range gi1/0-1
+  channel-group 1 mode active       
+  
+port-channel load balance src-mac            #2.c
+
+spanning-tree mode mst          #3.a
+spanning-tree mst configuration
+  instance 1 vlan 1-4094      
