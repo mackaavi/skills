@@ -9,6 +9,12 @@ aaa autenication login default group radius local
 
 vlan 1000
   name Managment
+  
+  ----------------------------------------------------------
+  если не добавляется влан, то сделать через 
+  (congig)#vlan database
+    (vlan)#vlan 1000
+  ---------------------------------------------------------
 
 interface range gi0/0-3,gi1/0-3
   switchport trunk ecapsulation dot1q
