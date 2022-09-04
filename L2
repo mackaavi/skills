@@ -47,9 +47,28 @@ port-channel load balance src-mac            #2.c
 
 spanning-tree mode mst          #3.a
 spanning-tree vlan 1000 root primary/secondary
+spanning-tree portfast trunk
+spanning-tree portfast trunk
+spanning-tree portfast trunk
+
+
 
 
 
 ---------------
 spanning-tree mst configuration
-  instance 1 vlan 1-4094      
+  instance 16
+
+​
+
+17
+
+​
+
+18
+
+​
+
+19
+
+​1 vlan 1-4094      
