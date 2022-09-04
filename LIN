@@ -16,6 +16,7 @@ iface eth0 inet dhcp
  sudo service networking restart
  
  
+ https://ixnfo.com/nastrojka-ospf-v-quagga.html
  https://ixnfo.com/nastrojka-ospf-v-quagga.html OSPF
 
 
