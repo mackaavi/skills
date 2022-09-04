@@ -46,5 +46,10 @@ interface range gi1/0-1
 port-channel load balance src-mac            #2.c
 
 spanning-tree mode mst          #3.a
+spanning-tree vlan 1000 root primary/secondary
+
+
+
+---------------
 spanning-tree mst configuration
   instance 1 vlan 1-4094      
