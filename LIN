@@ -11,6 +11,11 @@ address 192.168.1.5
 netmask 255.255.255.0
 gateway 192.168.1.254
 
+servive networking restart
+4:44
+Текущее видео
+#1 - 3 способа изменить Hostname в Linux / Остров 
+
 
 Setup interface to dhcp
 
