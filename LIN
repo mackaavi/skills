@@ -14,12 +14,17 @@ auto eth0
 iface eth0 inet dhcp
 
  sudo service networking restart
+ 
+ 
+ https://ixnfo.com/nastrojka-ospf-v-quagga.html OSPF
 
 
 
 http://vladimir-stupin.blogspot.com/2019/09/bgp-quagga.html BGP
 
-http://mindhalls.ru/quagga-install-and-config/
+http://mindhalls.ru/quagga-install-and-config/    BGP
+
+https://vps-community.ru/linux-guides/33-nastrojka-linux-dlja-tunnelja-gre.html GRE
 
 
 
