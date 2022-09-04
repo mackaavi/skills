@@ -1,5 +1,7 @@
 ip a
 
+sudo systemctl set-default multi-user.target GUI enable
+
 
 iface eth0 inet static
 address 192.168.1.5
