@@ -1,5 +1,8 @@
 ip a
 
+
+| less - ограничити вывод команды
+
 sudo systemctl set-default multi-user.target GUI enable
 
 
