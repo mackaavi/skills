@@ -13,6 +13,8 @@ iface enp0s3 inet static
 systemctl restart networking.service
 
 
+https://ixnfo.com/ustanovka-quagga-v-ubuntu-server-18.html GRE
+
 
 https://ixnfo.com/ustanovka-quagga-v-ubuntu-server-18.html QUAGGA
 
