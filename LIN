@@ -4,13 +4,18 @@ ip a
 | less - ограничити вывод команды
 
 sudo systemctl set-default multi-user.target          GUI enable
+----------------------------------------------------------------------------
+
+sudo nano /etc/hostname     
+
+-------------------------------------------------------------------------
 
 auto enp0s3
 iface enp0s3 inet static
     address 192.168.1.5/24
 
 
-systemctl restart networking.service
+systemctl restart networking.service       под рутом или судо
 
 
 https://ixnfo.com/ustanovka-quagga-v-ubuntu-server-18.html GRE
