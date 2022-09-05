@@ -21,6 +21,8 @@ systemctl restart networking.service       под рутом или судо
 https://ixnfo.com/ustanovka-quagga-v-ubuntu-server-18.html GRE
 
 
+
+https://ixnfo.com/en/setting-up-bgp-in-quagga.html  BGP with quagga
 https://ixnfo.com/ustanovka-quagga-v-ubuntu-server-18.html QUAGGA
 
 
