@@ -25,6 +25,23 @@ https://installati.one/debian/11/bgpq4/   install
 
 
 
+
+-----------------------------------
+https://www.layerstack.com/resources/tutorials/How-to-install-Graphical-User-Interface-GUI-for-Debian-11-Cloud-Servers- gui
+
+ftp.us.debian.org/debian/pool/main/q/quagga/quagga-bgpd_1.2.4-3_amd64.deb   quagga
+
+cd ~/Downloads
+
+    sudo tar xvzf quagga_1.2.4.orig.tar.gz
+
+sudo nano ~/Загрузки/quagga-1.2.4/bgpd/bgpd.conf.sample
+
+
+
+
+
+
 https://ixnfo.com/ustanovka-quagga-v-ubuntu-server-18.html GRE
 
 
