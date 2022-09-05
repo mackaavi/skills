@@ -15,7 +15,17 @@ iface enp0s3 inet static
     address 192.168.1.5/24
 
 
-systemctl restart networking.service       под рутом или судо
+systemctl restart networking.service   
+
+
+
+---------------------------------------------
+wget https://launchpadlibrarian.net/440384458/quagga_1.2.4.orig.tar.gz
+    sudo tar xvzf quagga_1.2.4.orig.tar.gz
+sudo nano sudo nano ~/quagga-1.2.4/bgpd/bgpd.conf.samplequagga-1.2.4quagga-1.2.4
+
+    
+---------------------------------------------
 
 
 https://installati.one/debian/11/bgpq4/   install 
