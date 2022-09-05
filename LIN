@@ -38,10 +38,9 @@ cd ~/Downloads
 sudo nano ~/Загрузки/quagga-1.2.4/bgpd/bgpd.conf.sample
 
 
+------------------------------------------
 
-
-
-
+https://vps-community.ru/linux-guides/33-nastrojka-linux-dlja-tunnelja-gre.html GRE
 https://ixnfo.com/ustanovka-quagga-v-ubuntu-server-18.html GRE
 
 
