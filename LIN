@@ -18,6 +18,13 @@ iface enp0s3 inet static
 systemctl restart networking.service       под рутом или судо
 
 
+https://installati.one/debian/11/bgpq4/   install 
+
+
+
+
+
+
 https://ixnfo.com/ustanovka-quagga-v-ubuntu-server-18.html GRE
 
 
