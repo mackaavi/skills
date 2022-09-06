@@ -1,4 +1,16 @@
-ip a
+ip tunnel add tun0 mode gre local 1.2.3.4 remote 3.4.5.6 ttl 64
+
+ip addr add 192.168.0.10/30 dev tun0
+
+ip link set up tun0ip tunnel add tun0 mode gre local 1.2.3.4 remote 3.4.5.6 ttl 64
+
+ip addr add 192.168.0.10/30 dev tun0
+
+ip link set up tun0ip tunnel add tun0 mode gre local 1.2.3.4 remote 3.4.5.6 ttl 64
+
+ip addr add 192.168.0.10/30 dev tun0
+
+ip link set up tun0ip a
 
 
 | less - ограничити вывод команды
@@ -9,6 +21,13 @@ sudo systemctl set-default multi-user.target          GUI enable
 sudo nano /etc/hostname     
 
 -------------------------------------------------------------------------
+
+ip tunnel add tun0 mode gre local 1.2.3.4 remote 3.4.5.6 ttl 64
+
+ip addr add 192.168.0.10/30 dev tun0
+
+ip link set up tun0
+
 
 auto enp0s3
 iface enp0s3 inet static
