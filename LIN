@@ -6,7 +6,7 @@
 
  systemctl start nftables
  nft add table ip nat
- nft add chain ip nat postrouting { type nat hook postrouting priority 0\ ;}
+ nft add chain ip nat postrouting { type nat hook postrouting priority 0 \; }
 
 
 
