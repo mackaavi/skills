@@ -1,3 +1,26 @@
+------------------------------------------------
+НФТЭЙБЛЗ
+
+1) nano /etc/sysctl.conf
+раскомментить net.ipv4.ip_forward=1
+
+ systemctl start nftables
+ nft add table ip nat
+ nft add chain ip nat postrouting { type nat hook postrouting priority 0\ ;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------
 ip tunnel add tun0 mode gre local 1.2.3.4 remote 3.4.5.6 ttl 64
 
 ip addr add 192.168.0.10/30 dev tun0
