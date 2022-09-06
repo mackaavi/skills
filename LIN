@@ -10,7 +10,7 @@
 
  systemctl start nftables
  nft add table ip nat
- nft add chain ip nat postrouting { type nat hook postrouting priority 0nft add chain ip nat postrouting { type nat hook postrouting priority 0\; }
+ nft add chain ip nat postrouting { type nat hook postrouting priority 0\; }
  nft add rule nat postrouting ip saddr 172.16.0.0/24 ofname 'enp9s0' masquerade
  
 
