@@ -8,7 +8,12 @@
  nft add table ip nat
  nft add chain ip nat postrouting { type nat hook postrouting priority 0nft add chain ip nat postrouting { type nat hook postrouting priority 0\; }
 
+2)RIZNE
+nft flush ruleset - очистить таблицу НФТ
+nft list ruleset - просмотреть таблицу нфт
 
+
+nano /etc/nftables.conf конфиги с натом 
 
 
 
