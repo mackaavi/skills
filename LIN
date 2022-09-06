@@ -3,6 +3,10 @@
 
 1) nano /etc/sysctl.conf
 раскомментить net.ipv4.ip_forward=1
+Проверка:
+# cat /proc/sys/net/ipv4/ip_forward
+1
+
 
  systemctl start nftables
  nft add table ip nat
