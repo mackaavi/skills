@@ -24,6 +24,16 @@ nano /etc/nftables.conf конфиги с натом
 
 
 
+nano /etc/ssl/openssl.cnf конфига цс 
+
+nano /usr/lib/ssl/misc/CA.pl здесь меняем catop na /etc/ca 
+
+cd /usr/lib/ssl/misc
+    ./CA.pl -newca исполняем скрипт с ключём cpa
+open ssl verify cacert.pem проверка доверия серту
+cp cacert.pem /usr/local/share/ca-certificates/cacert.crf
+
+
 ----------------------------------------------------------------------
 ip tunnel add tun0 mode gre local 1.2.3.4 remote 3.4.5.6 ttl 64
 
@@ -143,26 +153,3 @@ https://vps-community.ru/linux-guides/33-nastrojka-linux-dlja-tunnelja-gre.html 
 
 
 ip a 
-
-
-
-
-
-
-
-
-
-
-
-sertificat
-
-
-nano /etc/ssl/openssl.cnf конфига цс 
-
-nano /usr/lib/ssl/misc/CA.pl здесь меняем catop na /etc/ca 
-
-cd /usr/lib/ssl/misc
-    .CA.pl -newca 
-open ssl verify cacert.pem проверка доверия серту
-cp cacert.pem /usr/local/share/ca-certificates/cacert.crf
-
